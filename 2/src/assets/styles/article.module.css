@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMSerif-Regular";
+  src: url("../../assets/fonts/DM_Serif/DMRegular.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  color: #f9f9f9;
+}
+@media all and (min-width: 768px) {
+  .article {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8rem 0 10rem 0;
+  }
+}
+.article__real {
+  margin: 2rem 0;
+}
+.article__real__header {
+  font-size: 6rem;
+  font-family: DmSerif-Regular, serif;
+  line-height: 8rem;
+}
+.article__real__header__text {
+  color: #ec494a !important;
+}
+.article__real__info {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  line-height: 8rem;
+}
+.article__real__button {
+  font-family: Roboto-Bold, serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ec494a;
+  align-items: center;
+  border: none;
+  outline: none;
+  color: #f9f9f9;
+  padding: 0.3rem 0.3rem 0.3rem 1rem;
+  border-radius: 0.8rem;
+  max-width: 150px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+.article__real__button__arrow {
+  background-color: #f2a69a;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+}
+.article__info {
+  display: flex;
+  flex-direction: column;
+}
+.article__info__export {
+  color: #ec494a;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  font-family: "Roboto-Light", serif;
+}
+.article__info__based {
+  font-size: 2.4rem;
+  color: #f9f9f9;
+  line-height: 4rem;
+}
+.article__info__look {
+  color: #cacaca;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  padding: 2rem 0;
+}
+.article__info__link {
+  color: #ec494a;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1.6rem 0;
+  position: relative;
+}
+.article__info__link:after {
+  content: "";
+  width: 150px;
+  height: 0.1rem;
+  background-color: #ec494a;
+  display: block;
+  top: 115%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=article.module.css.map */

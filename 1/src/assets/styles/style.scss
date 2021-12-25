@@ -1,0 +1,27 @@
+@import "index";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
+}
+
+html, body, p, h2, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: rgb(255,70,135);
+  background: linear-gradient(129deg, rgba(255,70,135,1) 0%, rgba(255,196,126,1) 100%);  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+}
+

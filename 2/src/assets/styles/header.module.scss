@@ -1,0 +1,92 @@
+@import "index";
+
+$nav-color: #fff;
+
+.nav {
+
+  color: $nav-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  &__group {
+    @extend .nav;
+    padding: 0;
+    align-items: flex-start;
+    flex-direction: column;
+    @include tablet-desktop{
+      flex-direction: row;
+      gap: 3.2rem;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+    }
+
+    &__heart {
+      position: relative;
+      width: 10px;
+      height: 9px;
+      margin: .5rem 0 0 96%;
+
+    }
+
+    &__heart:before,
+    &__heart:after {
+      position: absolute;
+      content: "";
+      left: 5px;
+      top: 0;
+      width: 5px;
+      height: 8px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    &__heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    &__email {
+      font-family: "Roboto-Light", serif;
+      font-size: 1.6rem;
+      color: $secondary-text-color;
+      margin-top: 1rem;
+    }
+  }
+
+  &__menu {
+    width: 3rem;
+    height: .4rem;
+    cursor: pointer;
+    direction: rtl;
+    display: block;
+
+    &__li {
+      list-style: none;
+      margin: .7rem 0;
+    }
+
+    &__li:after {
+      content: '';
+      display: block;
+      height: .1rem;
+      background-color: #fff;
+      width: 100%;
+    }
+
+    &__li__2 {
+      width: 75%;
+    }
+
+    &__li__3 {
+      width: 50%;
+    }
+  }
+
+}
+

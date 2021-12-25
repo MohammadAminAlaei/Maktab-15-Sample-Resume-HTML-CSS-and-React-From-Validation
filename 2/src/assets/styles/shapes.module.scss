@@ -1,0 +1,41 @@
+@import "index";
+$shape-relative-border-color: #1ac9ed;
+$shape-border-raduis-size: .4rem;
+
+.shapes {
+  direction: rtl;
+
+  &__relative {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    background-color: transparent;
+    border: $shape-border-raduis-size solid $shape-relative-border-color;
+    border-radius: 50%;
+    transform: translateX(-180%);
+    margin: 3.5rem 0 -1.5rem 0;
+
+  }
+
+  &__relative:after {
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    background-color: #1ac9ed;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(250%, 300%);
+  }
+
+  &__absolute {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: $shape-border-raduis-size solid #ea4947;
+    display: block;
+    border-radius: 50%;
+    transform: translate(20%, -30%);
+  }
+}
+

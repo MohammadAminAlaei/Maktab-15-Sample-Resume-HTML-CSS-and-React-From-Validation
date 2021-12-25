@@ -1,0 +1,153 @@
+$card-link-color: #80a5e1;
+$card-padding: 4rem 1.5rem;
+$card_text-align: center;
+$card_title_font-size: 3.5rem;
+$card_text_font-size: 1.5rem;
+$card_text_padding: 1.5rem 0;
+$custom-input-width: 100%;
+$custom-input-padding: 1.6rem 0.3rem;
+$custom-input-background-color: #f8f8f8;
+$custom-input-border: .2rem solid transparent;
+$custom-input-outline: none;
+$custom-input-margin: .8rem 0;
+$card-botton-background-color: #4796ff;
+
+.card {
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: $card-padding;
+  text-align: $card_text-align;
+
+  @include tablet-desktop {
+    padding: 4rem 3.2rem;
+  }
+
+  &__title {
+    font-size: $card_title_font-size;
+    font-family: Roboto-Bold, serif;
+  }
+
+  &__text {
+    font-size: $card_text_font-size;
+    font-family: Roboto, serif;
+    padding: $card_text_padding;
+    display: block;
+  }
+
+  &__link {
+    color: $card-link-color;
+  }
+
+  &__input {
+    &__name, &__email {
+      border-radius: 1.6rem;
+    }
+  }
+
+  &__inputs {
+
+    display: flex;
+    gap: .4rem;
+
+    @include tablet-desktop {
+      gap: 0;
+    }
+
+    &__fName {
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    &__lName {
+      border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+  }
+
+  &__button {
+    width: $custom-input-width;
+    background-color: $card-botton-background-color;
+    border: none;
+    outline: none;
+    padding: 1.5rem 0;
+    border-radius: 1.5rem;
+    color: #fff;
+    margin: 1rem 0;
+    position: relative;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  &__button:after {
+    content: '\2192';
+    position: absolute;
+    right: 5%;
+    font-size: 2.5rem;
+    top: 13%;
+  }
+
+  &__agree {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+
+    &__checkbox {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 1rem;
+      border-radius: 2.5rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    &__checkbox:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: #eeeeee;
+      display: block;
+    }
+
+    &__checkbox:checked::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      display: block;
+    }
+
+    &__label {
+      font-size: 1.5rem;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #8eaae1;
+    }
+  }
+
+}
+
+.custom-input {
+  width: $custom-input-width;
+  background-color: $custom-input-background-color;
+  padding: $custom-input-padding;
+  border: $custom-input-border;
+  outline: $custom-input-outline;
+  margin: $custom-input-margin;
+
+  @include tablet-desktop {
+    padding: 1.6rem;
+  }
+}
+
+.custom-input:focus {
+  background-color: #fff;
+  border: .2rem solid $custom-input-background-color;
+}
+
+main input::placeholder {
+  font-family: Roboto-Regular-Italic, serif;
+  color: rgba(100, 100, 100, .6);
+}

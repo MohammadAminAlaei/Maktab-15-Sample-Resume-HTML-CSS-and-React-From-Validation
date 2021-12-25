@@ -1,0 +1,10 @@
+$break-points: (
+        tablet:768px,
+);
+
+@mixin tablet-desktop() {
+  @media all and (min-width: map-get($break-points, 'tablet')) {
+    @content;
+  }
+}
+

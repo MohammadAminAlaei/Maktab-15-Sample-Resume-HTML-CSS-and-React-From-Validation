@@ -1,0 +1,105 @@
+@import "index";
+$margin-main: 5rem 0;
+$border-raduis-button: .8rem;
+
+.article {
+  display: flex;
+  flex-direction: column;
+  color: $primary-text-color;
+  @include tablet-desktop{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8rem 0 10rem 0;
+  }
+
+  &__real {
+
+    margin: 2rem 0;
+
+    &__header {
+      font-size: 6rem;
+      font-family: DmSerif-Regular, serif;
+      line-height: 8rem;
+
+      &__text {
+        color: $primary-colors !important;
+      }
+    }
+
+    &__info {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      line-height: 8rem;
+    }
+
+    &__button {
+      font-family: Roboto-Bold, serif;
+      display: flex;
+      justify-content: space-between;
+      background-color: $primary-colors;
+      align-items: center;
+      border: none;
+      outline: none;
+      color: $primary-text-color;
+      padding: .3rem .3rem .3rem 1rem;
+      border-radius: $border-raduis-button;
+      max-width: 150px;
+      font-size: 1.4rem;
+      text-decoration: none;
+      margin-bottom: 2rem;
+
+      &__arrow {
+        background-color: #f2a69a;
+        padding: .8rem;
+        border-radius: $border-raduis-button;
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &__export {
+      color: $primary-colors;
+      font-size: 1.6rem;
+      line-height: 4rem;
+      font-family: "Roboto-Light", serif;
+    }
+
+    &__based {
+      font-size: 2.4rem;
+      color: $primary-text-color;
+      line-height: 4rem;
+    }
+
+    &__look {
+      color: $secondary-text-color;
+      font-size: 2rem;
+      line-height: 3.4rem;
+      padding: 2rem 0;
+    }
+
+    &__link {
+      color: $primary-colors;
+      font-size: 2rem;
+      text-decoration: none;
+      margin: 1.6rem 0;
+      position: relative;
+    }
+
+    &__link:after {
+      content: '';
+      width: 150px;
+      height: .1rem;
+      background-color: $primary-colors;
+      display: block;
+      top: 115%;
+      position: absolute;
+    }
+
+  }
+}
+

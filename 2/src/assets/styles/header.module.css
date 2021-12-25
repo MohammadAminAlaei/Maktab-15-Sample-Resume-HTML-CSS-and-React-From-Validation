@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMSerif-Regular";
+  src: url("../../assets/fonts/DM_Serif/DMRegular.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.nav, .nav__group {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.nav__group {
+  padding: 0;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .nav__group {
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+}
+.nav__group__title {
+  font-size: 2.4rem;
+}
+.nav__group__heart {
+  position: relative;
+  width: 10px;
+  height: 9px;
+  margin: 0.5rem 0 0 96%;
+}
+.nav__group__heart:before, .nav__group__heart:after {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 0;
+  width: 5px;
+  height: 8px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.nav__group__heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.nav__group__email {
+  font-family: "Roboto-Light", serif;
+  font-size: 1.6rem;
+  color: #cacaca;
+  margin-top: 1rem;
+}
+.nav__menu {
+  width: 3rem;
+  height: 0.4rem;
+  cursor: pointer;
+  direction: rtl;
+  display: block;
+}
+.nav__menu__li {
+  list-style: none;
+  margin: 0.7rem 0;
+}
+.nav__menu__li:after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  background-color: #fff;
+  width: 100%;
+}
+.nav__menu__li__2 {
+  width: 75%;
+}
+.nav__menu__li__3 {
+  width: 50%;
+}
+
+/*# sourceMappingURL=header.module.css.map */

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular-Italic";
+  src: url("../../assets/fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype");
+}
+.font-light {
+  font-family: "Roboto-Light" !important;
+}
+
+.font-bold {
+  font-family: "Roboto-Bold" !important;
+}
+
+.font-regular {
+  font-family: "Roboto" !important;
+}
+
+.card {
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+@media all and (min-width: 768px) {
+  .card {
+    padding: 4rem 3.2rem;
+  }
+}
+.card__title {
+  font-size: 3.5rem;
+  font-family: Roboto-Bold, serif;
+}
+.card__text {
+  font-size: 1.5rem;
+  font-family: Roboto, serif;
+  padding: 1.5rem 0;
+  display: block;
+}
+.card__link {
+  color: #80a5e1;
+}
+.card__input__name, .card__input__email {
+  border-radius: 1.6rem;
+}
+.card__inputs {
+  display: flex;
+  gap: 0.4rem;
+}
+@media all and (min-width: 768px) {
+  .card__inputs {
+    gap: 0;
+  }
+}
+.card__inputs__fName {
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+.card__inputs__lName {
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+.card__button {
+  width: 100%;
+  background-color: #4796ff;
+  border: none;
+  outline: none;
+  padding: 1.5rem 0;
+  border-radius: 1.5rem;
+  color: #fff;
+  margin: 1rem 0;
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.card__button:after {
+  content: "→";
+  position: absolute;
+  right: 5%;
+  font-size: 2.5rem;
+  top: 13%;
+}
+.card__agree {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.card__agree__checkbox {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 1rem;
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.card__agree__checkbox:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  display: block;
+}
+.card__agree__checkbox:checked::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: block;
+}
+.card__agree__label {
+  font-size: 1.5rem;
+}
+.card__agree__link {
+  text-decoration: none;
+  color: #8eaae1;
+}
+
+.custom-input {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 1.6rem 0.3rem;
+  border: 0.2rem solid transparent;
+  outline: none;
+  margin: 0.8rem 0;
+}
+@media all and (min-width: 768px) {
+  .custom-input {
+    padding: 1.6rem;
+  }
+}
+
+.custom-input:focus {
+  background-color: #fff;
+  border: 0.2rem solid #f8f8f8;
+}
+
+main input::placeholder {
+  font-family: Roboto-Regular-Italic, serif;
+  color: rgba(100, 100, 100, 0.6);
+}
+
+.light {
+  direction: rtl;
+  position: absolute;
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  right: 0;
+  z-index: 0;
+  border-radius: 0 0 0 100%;
+  box-shadow: 0 0 15rem 30rem #fff;
+}
+@media screen and (max-width: 1024px) {
+  .light {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
+}
+
+html, body, p, h2, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background: #ff4687;
+  background: linear-gradient(129deg, #ff4687 0%, #ffc47e 100%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

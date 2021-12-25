@@ -1,0 +1,75 @@
+@import "index";
+
+.icon {
+  color: $primary-text-color;
+  display: flex;
+  flex-direction: column;
+  @include tablet-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__items ul li {
+    line-height: 5rem;
+    list-style: none;
+  }
+
+  &__items ul li a {
+    font-size: 1.8rem;
+    color: $primary-text-color;
+  }
+
+  &__items__double {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-decoration: none;
+
+    &__star {
+      color: $primary-colors;
+      padding: 0 .8rem;
+    }
+
+    &__site {
+      font-size: 1.6rem !important;
+      text-decoration: none;
+    }
+
+    &__div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__chat {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    justify-content: space-between;
+
+    &__text {
+      font-size: 1.4rem;
+      color: $secondary-text-color;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    &__icon {
+      font-size: 2.8rem;
+      margin: 0 1rem;
+      position: relative;
+    }
+
+    &__icon:after {
+      content: '';
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      background-color: #1ae847;
+      border-radius: 50%;
+      transform: translate(-6.5px);
+    }
+  }
+
+}
